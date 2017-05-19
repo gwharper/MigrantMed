@@ -5,11 +5,7 @@ const config   = require('../config/database');
 
 // User Schema
 const UserSchema = mongoose.Schema({
-    firstName: {
-        type:     String,
-        required: true
-    },
-    lastName: {
+    name: {
         type:     String,
         required: true
     },

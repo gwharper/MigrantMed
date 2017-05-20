@@ -9,14 +9,14 @@ router.post('/register', (req, res, next) => {
     let newUser = new User({
         name:       req.body.name,
         username:   req.body.username,
-        email:      req.body.email,
-        phone:      req.body.phone,
-        city:       req.body.city,
-        state:      req.body.state,
-        zip:        req.body.zip,
-        specialty:  req.body.specialty,
-        experience: req.body.experience,
         password:   req.body.password
+        // email:      req.body.email,
+        // phone:      req.body.phone,
+        // city:       req.body.city,
+        // state:      req.body.state,
+        // zip:        req.body.zip,
+        // specialty:  req.body.specialty,
+        // experience: req.body.experience,
     });
 
     User.addUser(newUser, (err, user) => {

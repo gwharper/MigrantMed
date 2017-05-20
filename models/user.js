@@ -9,42 +9,43 @@ const UserSchema = mongoose.Schema({
         type:     String,
         required: true
     },
-        username: {
-        type:     String,
-        required: true
-    },
-    email: {
-        type:     String,
-        required: true
-    },
-    phone: {
-        type:     String,
-        required: true
-    },
-    city: {
-        type:     String,
-        required: false
-    },
-    state: {
-        type:     String,
-        required: true
-    },
-    zip: {
-        type:     String,
-        required: true
-    },
-    specialty: {
-        type:     String,
-        required: true
-    },
-    experience: {
-        type:     String,
-        required: true
-    },
     password: {
         type:     String,
         required: true
-    }
+    },
+        username: {
+        type:     String,
+        required: true
+     }
+    // email: {
+    //     type:     String,
+    //     required: true
+    // },
+    // phone: {
+    //     type:     Number,
+    //     required: true
+    // },
+    // city: {
+    //     type:     String,
+    //     required: false
+    // },
+    // state: {
+    //     type:     String,
+    //     required: true,
+    //     maxlength: 2
+    // },
+    // zip: {
+    //     type:     Number,
+    //     required: true
+    // },
+    // specialty: {
+    //     type:     String,
+    //     required: true
+    // },
+    // experience: {
+    //     type:     String,
+    //     required: true
+    // }
 });
 
 const User = module.exports = mongoose.model('User', UserSchema);
@@ -66,6 +67,5 @@ module.exports.addUser = function (newUser, callback) {
         });
     });
 };
-
 
 
